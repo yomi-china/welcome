@@ -4,14 +4,14 @@
 	<script>
 		function playPause() { 
     		var music = document.getElementById('music2'); 
-    		var music_btn = document.getElementById('music_btn2'); 
+    		var music_btn = document.getElementById('musicbtn'); 
     		if (music.paused){ 
         		music.play(); 
-        		music_btn.src = 'on.svg'; 
+        		musicbtn.src = 'on.svg'; 
     		} 
     		else{ 
         		music.pause(); 
-        		music_btn.src = 'off.svg';  
+        		musicbtn.src = 'off.svg';  
     		} 
 		} 
 	</script>
@@ -33,11 +33,10 @@
 			color:red;
 			text-decoration:none;
 		}</style></head>
-
-<audio id="music2" src="music.mp3"  loop="loop">你的浏览器不支持audio标签。</audio> <a href="javascript:playPause();"><img src="on.svg" width="1920" height="50" id="music_btn2" border="0"></a>
-<body background="beijing.png" style="background-repeat:no-repeat
-               background-attachment:fixed;
-               background-size:100%">
+	
+<body>
+<audio id="music2" src="music.mp3"  loop="loop">你的浏览器不支持audio标签。</audio> 
+<a href="javascript:playPause();"><img src="on.svg" width="1920" height="50" id="musicbtn" border="0"></a>
 <p><font color="white"><font size="3">大家好!</font></font></p><font color="white"><font size="3">	
 <p><font color="white"><font size="3">我是yomi,欢迎来到我的个人网站! </font></font></p><font color="white"><font size="3">
 <a href="https://ccw.site/student/237682165">你可以在共创世界社区找到我（点击跳转到我的主页）</a>
@@ -47,7 +46,7 @@
 <p><font color="white"><font size="3">2.小猫的世界</font></font></p><font color="white"><font size="3">
 <iframe src="https://www.ccw.site/detail/631080885c347515df7d617f" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
 <p><font color="white"><font size="3">©copyright by YOMI</font></font></p><font color="white"><font size="3">
-	
-         
-
+<body background="beijing.png" style="background-repeat:no-repeat
+               background-attachment:fixed;
+               background-size:100%">
 </font></font></font></font></font></font></font></font></font></font></font></font></body>
