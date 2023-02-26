@@ -3,19 +3,15 @@
 	<title>yomi</title>
 	<script>
 		function playPause() { 
-    		var music = document.getElementById('music2'); 
-    		var music_btn = document.getElementById('musicbtn'); 
-    		if (music.paused){ 
-        		music.play(); 
-        		musicbtn.src = 'on.svg'; 
-    		} 
-    		else{ 
-        		music.pause(); 
-        		musicbtn.src = 'off.svg';  
-    		} 
-		} 
+    			var music = document.getElementById('music2'); 
+    			if (music.paused){ 
+        			music.play(); 
+    			} 
+    			else{ 
+        			music.pause(); 
+    			} 
+			} 
 	</script>
-
 <head><style type="text/css">
 		a:link {
 			color:blue;
@@ -36,7 +32,7 @@
 	
 <body>
 <audio id="music2" src="music.mp3"  loop="loop">你的浏览器不支持audio标签。</audio> 
-<a href="javascript:playPause();"><img src="on.svg" width="1920" height="50" id="musicbtn" border="0"></a>
+<button type="button" onclick=javascript:playPause()>音乐开关</button>
 <p><font color="white"><font size="3">大家好!</font></font></p><font color="white"><font size="3">	
 <p><font color="white"><font size="3">我是yomi,欢迎来到我的个人网站! </font></font></p><font color="white"><font size="3">
 <a href="https://ccw.site/student/237682165">你可以在共创世界社区找到我（点击跳转到我的主页）</a>
