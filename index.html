@@ -1,7 +1,7 @@
          <head>
 <meta content="text/html" charset="UTF-8">
 <title>yomi</title>
-<embed src="yinyue.mp3" hidden="false" autostart="true" loop="true">
+<audio id="music" src="yinyue.mp3" autoplay="autoplay" loop="loop">你的浏览器不支持audio标签。</audio>    
 <head><style type="text/css">
 		a:link {
 			color:pink;
@@ -21,7 +21,33 @@
 		}</style></head>
 <body background="beijing.png" style="background-repeat:no-repeat
                background-attachment:fixed;
-               background-size:100% 100%; "><p><font color="white"><font size="3">大家好!</font></font></p><font color="white"><font size="3">
+               background-size:100% 100%; ">
+<a id="audio_btn"><img src="on.svg" width="48" height="50" id="music_btn" border="0"></a>    
+
+<script>    
+
+$("#audio_btn").click(function(){    
+
+    var music = document.getElementById("music");    
+
+    if(music.paused){    
+
+        music.play();    
+
+        $("#music_btn").attr("src","on.svg");    
+
+    }else{    
+
+        music.pause();    
+
+        $("#music_btn").attr("src","off.svg");    
+
+    }    
+
+});    
+
+</script>
+<p><font color="white"><font size="3">大家好!</font></font></p><font color="white"><font size="3">	
 <p><font color="white"><font size="3">我是yomi,欢迎来到我的个人网站! </font></font></p><font color="white"><font size="3">
 <a href="https://ccw.site/student/237682165">你可以在共创世界社区找到我（点击跳转到我的主页）</a>
 <p><font color="white"><font size="3">我的scratch编程作品：</font></font></p><font color="white"><font size="3">
