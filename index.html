@@ -1,17 +1,6 @@
 <head>
 	<meta content="text/html" charset="UTF-8">
 	<title>yomi</title>
-	<script>
-		function playPause() { 
-    			var music = document.getElementById('yinyue'); 
-    			if (music.paused){ 
-        			music.play(); 
-    			} 
-    			else{ 
-        			music.pause(); 
-    			} 
-			} 
-	</script>
 <head><style type="text/css">
 		a:link {
 			color:blue;
@@ -31,7 +20,25 @@
 		}</style></head>
 	
 <body>
-	<audio id="yinyue" src="yinyue.mp3"  loop="loop" autoplay="autoplay">你的浏览器不支持audio标签</audio>
+<audio id="myAudio" src="yinyue.mp3" preload="auto" autoplay></audio>
+
+	<button onclick="togglePlay()">背景音乐播放/暂停</button>
+
+	<script>
+		var audio = document.getElementById("myAudio");
+
+		function togglePlay() {
+			if (audio.paused || audio.ended) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+
+		audio.addEventListener('canplaythrough', function() {
+			audio.play();
+		});
+	</script>
 	<button type="button" style="background-color: #8500f2;width: 100px;height: 36px;color: #FFFFFF" onclick=javascript:playPause()>音乐开关</button>
 	<p><font color="white"><font size="3">大家好!</font></font></p><font color="white"><font size="3">	
 	<p><font color="white"><font size="3">我是yomi,欢迎来到我的个人网站! </font></font></p><font color="white"><font size="3">
