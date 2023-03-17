@@ -1,29 +1,44 @@
+<!DOCTYPE html>
+<html>
 <head>
-	<meta content="text/html" charset="UTF-8">
+	<meta charset="UTF-8">
 	<title>yomi</title>
-<head><style type="text/css">
+	<style type="text/css">
+		body {
+			background-image: url("beijing.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+		}
 		a:link {
-			color:blue;
-			text-decoration:none;
+			color: blue;
+			text-decoration: none;
 		}
 		a:visited {
-			color:pink;
-			text-decoration:none;
+			color: pink;
+			text-decoration: none;
 		}
 		a:hover {
-			color:purple;
-			text-decoration:none;
+			color: purple;
+			text-decoration: none;
 		}
 		a:active {
-			color:red;
-			text-decoration:none;
-		}</style></head>
-	
+			color: red;
+			text-decoration: none;
+		}
+		.btn {
+			border-radius: 5px;
+			padding: 10px 20px;
+			background-color: blue;
+			color: white;
+			border: none;
+			outline: none;
+		}
+	</style>
+</head>	
 <body>
-<audio id="myAudio" src="yinyue.mp3" preload="auto" autoplay></audio>
-
-	<button onclick="togglePlay()">背景音乐播放/暂停</button>
-
+	<audio id="myAudio" src="yinyue.mp3" preload="auto" autoplay></audio>
+	<button class="btn" onclick="togglePlay()">背景音乐播放/暂停</button>
 	<script>
 		var audio = document.getElementById("myAudio");
 
@@ -39,17 +54,11 @@
 			audio.play();
 		});
 	</script>
-	<button type="button" style="background-color: #8500f2;width: 100px;height: 36px;color: #FFFFFF" onclick=javascript:playPause()>音乐开关</button>
-	<p><font color="white"><font size="3">大家好!</font></font></p><font color="white"><font size="3">	
-	<p><font color="white"><font size="3">我是yomi,欢迎来到我的个人网站! </font></font></p><font color="white"><font size="3">
-	<a href="https://ccw.site/student/237682165">你可以在共创世界社区找到我（点击跳转到我的主页）</a>
-	<p><font color="white"><font size="3">我的scratch编程作品：</font></font></p><font color="white"><font size="3">
-	<p><font color="white"><font size="3">1.极速酷跑</font></font></p><font color="white"><font size="3">
-	<iframe src="https://www.ccw.site/detail/63f1abd7bc781c7f90e1461a" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
-	<p><font color="white"><font size="3">2.小猫的世界</font></font></p><font color="white"><font size="3">
-	<iframe src="https://www.ccw.site/detail/631080885c347515df7d617f" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
-	<p><font color="white"><font size="3">©copyright by YOMI</font></font></p><font color="white"><font size="3">
-	<body background="beijing.png" style="background-repeat:no-repeat
-               background-attachment:fixed;
-               background-size:100%">
-</font></font></font></font></font></font></font></font></font></font></font></font></body>
+	<p style="color: white; font-size: 16px;">大家好！</p>	
+	<p style="color: white; font-size: 16px;">我是 yomi，欢迎来到我的个人网站！</p>
+	<a href="https://ccw.site/student/237682165" style="color: white; font-size: 16px;">你可以在共创世界社区找到我（点击跳转到我的主页）</a>
+	<p style="color: white; font-size: 16px;">我的 scratch 编程作品：</p>
+	<p style="color: white; font-size: 16px;">1.极速酷跑</p>
+	<iframe src="https://www.ccw.site/detail/63f1abd7bc781c7f90e1461a" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no"
+	<p style="color: white; font-size: 16px;">2.太空大战</p>
+	<iframe src="https://www.ccw.site/detail/638ac839bec9161834d38ccf" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no"
